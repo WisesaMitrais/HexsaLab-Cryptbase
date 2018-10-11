@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_am_navigation_home"
+        android:icon="@drawable/img_home_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_am_navigation_web"
+        android:icon="@drawable/img_web_icon"
+        android:title="News" />
+    <item
+        android:id="@+id/menu_am_navigation_blockchain"
+        android:icon="@drawable/img_blockchain_icon"
+        android:title="Blockchain"/>
+</menu>

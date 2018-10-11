@@ -1,0 +1,44 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">Cryptbase</string>
+    <string name="app_home_classic">Classic Cryptography</string>
+    <string name="app_home_modern">Modern Cryptography</string>
+    <string name="app_home_symmetry">Symmetry Key</string>
+    <string name="app_home_public">Public Key</string>
+    <string name="app_home_hash">Hash Function Cryptography</string>
+    <string name="app_home_other">Others</string>
+    <string name="encrypt_button">ENCRYPT</string>
+    <string name="decrypt_button">DECRYPT</string>
+    <string name="encrypt_text">Encryption</string>
+    <string name="decrypt_text">Decryption</string>
+    <string name="plain_text">Plaintext</string>
+    <string name="cipher_text">Ciphertext</string>
+    <string name="key_text">Key</string>
+    <!-- Home | Classic Cryptography -->
+    <string name="tran_name_caesar">fnh_tn_caesar</string>
+    <string name="tran_name_scytale">fnh_tn_scytale</string>
+    <string name="tran_name_onetimepad">fnh_tn_onetimepad</string>
+    <string name="head_name_caesar">Caesar Cipher</string>
+    <string name="head_name_scytale">Scytale Cipher</string>
+    <string name="head_name_onetimepad">One-Time Pad</string>
+    <string name="head_desc_caesar">Substitution Method</string>
+    <string name="head_desc_scytale">Transposition Method</string>
+    <string name="head_desc_onetimepad">The Unbreakable Cipher</string>
+    <string name="body_desc_caesar">A method of encryption by which units of plaintext are replaced
+        with ciphertext, according to a fixed system.</string>
+    <string name="body_desc_scytale">A method of encryption by which the positions held by units of
+        plaintext are shifted according to a regular system.</string>
+    <string name="body_desc_onetimepad">An encryption method that cannot be cracked, but require
+        a one-time key with same size with message being sent.</string>
+    <string name="button_try">TRY</string>
+    <string-array name="caesar_key_array">
+        <item>1</item> <item>2</item> <item>3</item> <item>4</item> <item>5</item>
+        <item>6</item> <item>7</item> <item>8</item> <item>9</item> <item>10</item>
+        <item>11</item> <item>12</item> <item>13</item> <item>14</item> <item>15</item>
+        <item>16</item> <item>17</item> <item>18</item> <item>19</item> <item>20</item>
+        <item>21</item> <item>22</item> <item>23</item> <item>24</item> <item>25</item>
+    </string-array>
+    <string-array name="scytale_key_array">
+        <item>2</item> <item>3</item>
+    </string-array>
+</resources>
