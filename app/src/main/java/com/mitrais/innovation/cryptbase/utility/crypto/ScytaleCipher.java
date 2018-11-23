@@ -6,7 +6,7 @@ public class ScytaleCipher {
 
     /*Declare global variables.*/
     private String string, result;
-    private int key, counter;
+    private int key;
     private ClassicProcedure classicProcedure;
 
     /**

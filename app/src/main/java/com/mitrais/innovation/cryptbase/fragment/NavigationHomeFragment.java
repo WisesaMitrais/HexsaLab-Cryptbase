@@ -2,6 +2,7 @@ package com.mitrais.innovation.cryptbase.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,8 @@ import android.widget.Button;
 
 import com.mitrais.innovation.cryptbase.R;
 import com.mitrais.innovation.cryptbase.activity.ClassicCryptographyActivity;
+
+import java.util.Objects;
 
 public class NavigationHomeFragment extends Fragment {
 
@@ -29,15 +32,22 @@ public class NavigationHomeFragment extends Fragment {
         //Do nothing.
     }
 
+    /**
+     * OnCreate method.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * OnCreateView method.
+     */
     @Override
-    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View viewHomeFragment = inflater.inflate(R.layout.fragment_navigation_home, container, false);
+        final View viewHomeFragment = inflater.inflate(R.layout.fragment_navigation_home, container,
+                false);
         initializeComponents(viewHomeFragment);
         /*When caesar try button is clicked.*/
         buttonTryCaesar.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +81,7 @@ public class NavigationHomeFragment extends Fragment {
      * @param viewHomeFragment: a view that show on home fragment.
      */
     private void initializeComponents(View viewHomeFragment){
-        intent = new Intent(getActivity(), ClassicCryptographyActivity.class); //Ordinary Intent for launching a new activity.
+        intent = new Intent(getActivity(), ClassicCryptographyActivity.class);                      //Ordinary Intent for launching a new activity.
         bundle = new Bundle();
         buttonTryCaesar = viewHomeFragment.findViewById(R.id.fnh_caesar_button);
         buttonTryScytale = viewHomeFragment.findViewById(R.id.fnh_scytale_button);
@@ -85,18 +95,20 @@ public class NavigationHomeFragment extends Fragment {
      * @param viewStartValue: R id from string card view.
      * @param activeCardValue: a number that identify active card.
      */
-    private void buttonOnClickAction(View viewHomeFragment, int transitionNameValue, int viewStartValue,
-                                        int activeCardValue){
+    private void buttonOnClickAction(View viewHomeFragment, int transitionNameValue,
+                                     int viewStartValue, int activeCardValue){
         transitionName = getString(transitionNameValue);
-        viewStart = viewHomeFragment.findViewById(viewStartValue); //Define the view that the animation will start from.
+        viewStart = viewHomeFragment.findViewById(viewStartValue);                                  //Define the view that the animation will start from.
         ActivityOptionsCompat options =
-                ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(),
+                ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        Objects.requireNonNull(getActivity()),
                         viewStart,
                         transitionName
                 );
         /*Start the intent.*/
         bundle.putInt("activeCard", activeCardValue);
         intent.putExtras(bundle);
-        ActivityCompat.startActivity(getContext(), intent, options.toBundle());
+        ActivityCompat.startActivity(Objects.requireNonNull(getContext()), intent,
+                options.toBundle());
     }
 }

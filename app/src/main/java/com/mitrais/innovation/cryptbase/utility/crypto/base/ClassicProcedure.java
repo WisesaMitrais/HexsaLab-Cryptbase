@@ -6,8 +6,6 @@ public class ClassicProcedure {
     private char[] letterList = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
                                  'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
                                  'u', 'v', 'w', 'x', 'y', 'z'};
-    private int resultInt, counter;
-    private String resultString;
 
     /**
     * Convertion a letter to a number based on letter list setting.
@@ -15,7 +13,7 @@ public class ClassicProcedure {
      * @return an index of array, represent number value of character.
     */
     public int letterToNumber(char letter){
-        resultInt = 0;
+        int resultInt = 0;
         while(letter != letterList[resultInt]){
             resultInt++;
         }
@@ -38,16 +36,16 @@ public class ClassicProcedure {
      * @return a transposed string.
      */
     public String transposeArray(String string,  int key){
-        if(string.length() % key != 0) key++; //Increment key if  !(key | string.length)
-        resultString = "";
+        if(string.length() % key != 0) key++;                                                       //Increment key if  !(key | string.length)
+        StringBuilder resultString = new StringBuilder();
         for(int idx = 0; idx < key; idx++){
-            counter = idx;
+            int counter = idx;
             while(counter < string.length()){
-                resultString += string.charAt(counter);
+                resultString.append(string.charAt(counter));
                 counter += key;
             }
         }
-        return resultString;
+        return resultString.toString();
     }
 
     /*for one time pad, must handle random process to generate key*/

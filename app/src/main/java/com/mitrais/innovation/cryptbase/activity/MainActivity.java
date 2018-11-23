@@ -24,20 +24,22 @@ public class MainActivity extends AppCompatActivity {
     private Button appInfo;
     private DialogFragment dialogAppInfo;
     private BottomNavigationView bottomNavigation;
-    private FragmentTransaction fragmentTransaction;
     private NavigationHomeFragment homeFragment;
     private NavigationNewsFragment webFragment;
     private NavigationBlockchainFragment blockchainFragment;
 
+    /**
+     * OnCreate method.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Set potrait screen mode.
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);                          //Set potrait screen mode.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initializeComponents();
         setDialogAppInfo();
         setBottomNavigation();
-        setCurrentFragment(homeFragment); //Set home fragment as default fragment.
+        setCurrentFragment(homeFragment);                                                           //Set home fragment as default fragment.
     }
 
     /**
@@ -94,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     */
     private void setCurrentFragment(Fragment fragment){
         //Set animation and new state of fragment.
-        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.fragment_fade_in, R.anim.fragment_fade_out);
         fragmentTransaction.replace(R.id.am_frame_layout, fragment);
         fragmentTransaction.addToBackStack(null);

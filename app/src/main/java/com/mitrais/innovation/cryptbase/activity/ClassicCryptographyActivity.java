@@ -22,7 +22,7 @@ import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandLight;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular;
 
-import java.util.List;
+import java.util.Objects;
 
 public class ClassicCryptographyActivity extends AppCompatActivity{
 
@@ -38,21 +38,20 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
     private Spinner keySelection;
     private FontQuicksandRegular outputEncryptDecrypt;
     private boolean isEncrypt;
-    private CaesarCipher caesarCipher;
-    private ScytaleCipher scytaleCipher;
-    private OneTimePad oneTimePad;
     private String inputText, outputText;
     private int key, activeCardValue;
-    private Snackbar snackbarWarning;
 
+    /**
+     * OnCreate method.
+     */
     @Override
-    protected void onCreate(Bundle savedInstanceState){
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Set potrait screen mode.
+    protected void onCreate(Bundle savedInstanceState) {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);                          //Set potrait screen mode.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classic_cryptography);
         initalizedComponents();
         Bundle b = getIntent().getExtras();
-        activeCardValue = b.getInt("activeCard"); //Get value of active card.
+        activeCardValue = Objects.requireNonNull(b).getInt("activeCard");                      //Get value of active card.
         selectKeyContent(activeCardValue);
         selectHeader(activeCardValue);
         changeStateRadioButton();
@@ -94,8 +93,6 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
             setKeyContentAction(R.array.caesar_key_array);
         }else if(activeCardValue == 2){
             setKeyContentAction(R.array.scytale_key_array);
-        }else if(activeCardValue == 3){
-            //One-time pad, not done yet.
         }
     }
 
@@ -117,17 +114,17 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
     public void selectHeader(int activeCardValue){
         if(activeCardValue == 1){
             setHeaderDetail(R.string.tran_name_caesar, R.string.head_name_caesar, R.string.head_desc_caesar,
-                    R.drawable.img_caesar, R.drawable.custom_gradient_color_1, R.string.body_desc_caesar);
+                    R.drawable.img_caesar, R.string.body_desc_caesar);
             layoutKeySpinner.setVisibility(View.VISIBLE);
             layoutKeyText.setVisibility(View.GONE);
         }else if(activeCardValue == 2){
             setHeaderDetail(R.string.tran_name_scytale, R.string.head_name_scytale, R.string.head_desc_scytale,
-                    R.drawable.img_scytale, R.drawable.custom_gradient_color_1, R.string.body_desc_scytale);
+                    R.drawable.img_scytale, R.string.body_desc_scytale);
             layoutKeySpinner.setVisibility(View.VISIBLE);
             layoutKeyText.setVisibility(View.GONE);
         }else if(activeCardValue == 3){
             setHeaderDetail(R.string.tran_name_onetimepad, R.string.head_name_onetimepad, R.string.head_desc_onetimepad,
-                    R.drawable.img_onetimepad, R.drawable.custom_gradient_color_1, R.string.body_desc_onetimepad);
+                    R.drawable.img_onetimepad, R.string.body_desc_onetimepad);
             layoutKeySpinner.setVisibility(View.GONE);
             layoutKeyText.setVisibility(View.VISIBLE);
         }
@@ -139,16 +136,15 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
      * @param headerName: title in header activity.
      * @param headerDesc: subtitle in header activity.
      * @param headerImg: image in header activity.
-     * @param headerBackground: custom gradient background in header activity.
      * @param bodyDesc: short description of encryption method.
      */
     private void setHeaderDetail(int headerLayout, int headerName, int headerDesc, int headerImg,
-                           int headerBackground, int bodyDesc){
+                           int bodyDesc){
         this.headerLayout.setTransitionName(getString(headerLayout));
         this.headerName.setText(getString(headerName));
         this.headerDesc.setText(getString(headerDesc));
         this.headerImage.setImageResource(headerImg);
-        this.headerBackground.setBackgroundResource(headerBackground);
+        this.headerBackground.setBackgroundResource(R.drawable.custom_gradient_color_1);
         this.bodyDesc.setText(getString(bodyDesc));
     }
 
@@ -188,12 +184,16 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
     public void radioButtonStateAction(int colorEncryptRadio, int colorEncryptFont,
                                        int colorDecryptRadio, int colorDecryptFont,
                                        int textHint, int textButton){
-        radioCardEncrypt.setCardBackgroundColor(getResources().getColor(colorEncryptRadio, null));
+        radioCardEncrypt.setCardBackgroundColor(getResources().getColor(colorEncryptRadio,
+                null));
         radioButtonEncrypt.setTextColor(getResources().getColor(colorEncryptFont, null));
-        radioBorderEncrypt.setCardBackgroundColor(getResources().getColor(colorEncryptRadio, null));
-        radioCardDecrypt.setCardBackgroundColor(getResources().getColor(colorDecryptRadio, null));
+        radioBorderEncrypt.setCardBackgroundColor(getResources().getColor(colorEncryptRadio,
+                null));
+        radioCardDecrypt.setCardBackgroundColor(getResources().getColor(colorDecryptRadio,
+                null));
         radioButtonDecrypt.setTextColor(getResources().getColor(colorDecryptFont, null));
-        radioBorderDecrypt.setCardBackgroundColor(getResources().getColor(colorDecryptRadio, null));
+        radioBorderDecrypt.setCardBackgroundColor(getResources().getColor(colorDecryptRadio,
+                null));
         inputEncryptDecrypt.setHint(getString(textHint));
         buttonEncryptDecrypt.setText(getString(textButton));
     }
@@ -224,7 +224,6 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
                     tempInput = tempInput.replace(" ", "")
                             .replace(",", "")
                             .replace(".","");
-                    System.out.println(tempInput+" XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
                     if(tempInput.length() == realKey.length()){
                         outputEncryptDecrypt.setText(processOneTimePad(inputText, realKey));
@@ -242,8 +241,8 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
      * @param key: key value.
      */
     public String processCaesarCipher(String inputText, int key){
-        caesarCipher = new CaesarCipher(inputText, key);
-        if(isEncrypt == true)
+        CaesarCipher caesarCipher = new CaesarCipher(inputText, key);
+        if(isEncrypt)
             outputText = caesarCipher.encryptCaesarCipher();
         else
             outputText = caesarCipher.decryptCaesarCipher();
@@ -256,8 +255,8 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
      * @param key: key value.
      */
     public String processScytaleCipher(String inputText, int key){
-        scytaleCipher = new ScytaleCipher(inputText, key);
-        if(isEncrypt == true)
+        ScytaleCipher scytaleCipher = new ScytaleCipher(inputText, key);
+        if(isEncrypt)
             outputText = scytaleCipher.encryptScytaleCipher();
         else
             outputText = scytaleCipher.decryptScytaleCipher();
@@ -270,8 +269,8 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
      * @param key: key string.
      */
     public String processOneTimePad(String inputText, String key){
-        oneTimePad = new OneTimePad(inputText, key);
-        if(isEncrypt == true)
+        OneTimePad oneTimePad = new OneTimePad(inputText, key);
+        if(isEncrypt)
             outputText = oneTimePad.encryptOneTimePad();
         else
             outputText = oneTimePad.decryptOneTimePad();
@@ -283,7 +282,7 @@ public class ClassicCryptographyActivity extends AppCompatActivity{
      * @param message: the value of snackbar warning text.
      */
     public void setSnackbarWarning(String message){
-        snackbarWarning = Snackbar.make(this.headerLayout, message, Snackbar.LENGTH_LONG);
+        Snackbar snackbarWarning = Snackbar.make(this.headerLayout, message, Snackbar.LENGTH_LONG);
         snackbarWarning.show();
     }
 }

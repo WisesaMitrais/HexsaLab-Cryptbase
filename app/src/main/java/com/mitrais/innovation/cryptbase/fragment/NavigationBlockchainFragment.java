@@ -1,6 +1,7 @@
 package com.mitrais.innovation.cryptbase.fragment;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,18 +11,28 @@ import com.mitrais.innovation.cryptbase.R;
 
 public class NavigationBlockchainFragment extends Fragment {
 
+    /**
+     * Class contructor.
+     */
     public NavigationBlockchainFragment() {
         //Do nothing.
     }
 
+    /**
+     * OnCreate method.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * OnCreateView method.
+     */
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_navigation_blockchain, container, false);
+        return inflater.inflate(R.layout.fragment_navigation_blockchain, container,
+                false);
     }
 }
