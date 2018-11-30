@@ -6,7 +6,7 @@
     <string name="app_home_symmetry">Symmetry Key</string>
     <string name="app_home_public">Public Key</string>
     <string name="app_home_hash">Hash Function Cryptography</string>
-    <string name="app_home_other">Others</string>
+    <string name="app_home_other">Applied Cryptography</string>
     <string name="encrypt_button">ENCRYPT</string>
     <string name="decrypt_button">DECRYPT</string>
     <string name="encrypt_text">Encryption</string>

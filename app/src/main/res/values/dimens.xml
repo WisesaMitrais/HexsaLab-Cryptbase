@@ -8,15 +8,15 @@
     <dimen name="component_padding_large">15dp</dimen>
     <dimen name="component_padding_default">10dp</dimen>
     <dimen name="border_area_static_height">150dp</dimen>
-    <dimen name="header_title_height">80dp</dimen>
-    <dimen name="header_body_height">80dp</dimen>
+    <dimen name="header_title_height">80dp</dimen> //better 40dp
+    <dimen name="header_body_height">80dp</dimen> //better 50dp
     <dimen name="scroll_body_height">230dp</dimen>
     <dimen name="card_body_height">210dp</dimen>
     <dimen name="card_body_width">350dp</dimen>
     <dimen name="card_title_height">60dp</dimen>
     <dimen name="card_button_width">150dp</dimen>
     <dimen name="card_button_height">35dp</dimen>
-    <dimen name="card_nav_bottom_height">50dp</dimen>
+    <dimen name="card_nav_bottom_height">50dp</dimen> //better 40dp
     <dimen name="card_corner_radius_large">18dp</dimen>
     <dimen name="card_corner_radius">5dp</dimen>
     <dimen name="image_icon_padding">11dp</dimen>
@@ -24,7 +24,7 @@
     <!-- Size -->
     <dimen name="title_font_bold_size">20dp</dimen>
     <dimen name="body_font_bold_size">18dp</dimen>
-    <dimen name="title_font_medium_size">17dp</dimen>
+    <dimen name="title_font_medium_size">17dp</dimen> //better
     <dimen name="body_font_medium_size">14dp</dimen>
     <dimen name="title_font_regular_size">14dp</dimen>
     <dimen name="body_font_regular_size">13dp</dimen>
