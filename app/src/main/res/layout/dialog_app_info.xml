@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color2">
+    android:background="@color/colorWhite1">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,12 +12,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/card_title_height"
-            android:background="@color/color4">
+            android:background="@color/colorButton">
             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Application Info"
-                android:textColor="@color/color2"
+                android:textColor="@color/colorWhite1"
                 android:textSize="@dimen/title_font_medium_size"
                 android:gravity="center_vertical"
                 android:paddingLeft="10dp"/>

@@ -5,8 +5,8 @@ activity_classic_cryptography: header background if scytale card view is clicked
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="@color/color7"
-        android:endColor="@color/color7"
+        android:startColor="@color/colorBlue1"
+        android:endColor="@color/colorBlue1"
         android:angle="0"/>
     <corners
         android:radius="0dp"/>

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/color2">
+        android:background="@color/colorWhite1">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/header_title_height"
@@ -34,7 +34,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/head_name_caesar"
-                    android:textColor="@color/color2"
+                    android:textColor="@color/colorWhite1"
                     android:textSize="@dimen/title_font_medium_size"
                     android:layout_marginLeft="@dimen/component_padding_default"
                     android:layout_marginTop="@dimen/component_padding_large"/>
@@ -42,7 +42,6 @@
                     android:id="@+id/acc_header_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/head_desc_caesar"
                     android:textColor="@color/color5"
                     android:textSize="@dimen/body_font_light_size"
                     android:layout_marginLeft="@dimen/component_padding_default"/>
@@ -85,14 +84,14 @@
                             android:layout_height="@dimen/card_button_height"
                             android:layout_alignParentLeft="true"
                             app:cardCornerRadius="@dimen/card_corner_radius_large"
-                            app:cardBackgroundColor="@color/color4">
+                            app:cardBackgroundColor="@color/colorButton">
                             <Button
                                 android:id="@+id/acc_radio_button_encrypt"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@android:color/transparent"
                                 android:text="@string/encrypt_text"
-                                android:textColor="@color/color2"
+                                android:textColor="@color/colorWhite1"
                                 android:textSize="@dimen/button_text_size"
                                 android:layout_gravity="center"/>
                         </android.support.v7.widget.CardView>
@@ -102,7 +101,7 @@
                             android:layout_weight="1"
                             android:layout_height="@dimen/card_button_height"
                             app:cardCornerRadius="@dimen/card_corner_radius_large"
-                            app:cardBackgroundColor="@color/color3">
+                            app:cardBackgroundColor="@color/colorGrey1">
                             <Button
                                 android:id="@+id/acc_radio_button_decrypt"
                                 android:layout_width="match_parent"
@@ -126,14 +125,14 @@
                             android:layout_height="@dimen/card_button_height"
                             android:layout_centerInParent="true"
                             app:cardCornerRadius="0dp"
-                            app:cardBackgroundColor="@color/color4"/>
+                            app:cardBackgroundColor="@color/colorButton"/>
                         <android.support.v7.widget.CardView
                             android:id="@+id/acc_radio_border_decrypt"
                             android:layout_width="20dp"
                             android:layout_height="@dimen/card_button_height"
                             android:layout_centerInParent="true"
                             app:cardCornerRadius="0dp"
-                            app:cardBackgroundColor="@color/color3"/>
+                            app:cardBackgroundColor="@color/colorGrey1"/>
                     </LinearLayout>
                 </RelativeLayout>
                 <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
@@ -141,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:text="Input"
                     android:textSize="@dimen/body_font_medium_size"
-                    android:textColor="@color/color3"
+                    android:textColor="@color/colorGrey1"
                     android:layout_marginTop="@dimen/component_margin_top_default"
                     android:layout_marginLeft="@dimen/component_margin_left_right_default"
                     android:layout_marginRight="@dimen/component_margin_left_right_default"
@@ -171,7 +170,7 @@
                             android:textSize="@dimen/body_font_medium_size"
                             android:paddingLeft="@dimen/component_padding_default"
                             android:layout_marginLeft="@dimen/component_margin_left_right_default"
-                            android:textColor="@color/color3"
+                            android:textColor="@color/colorGrey1"
                             android:background="@drawable/custom_border_area_2"/>
                     </LinearLayout>
                     <LinearLayout
@@ -209,7 +208,7 @@
                                 android:hint="@string/key_text"
                                 android:textSize="@dimen/body_font_medium_size"
                                 android:paddingLeft="@dimen/component_padding_default"
-                                android:textColor="@color/color3"
+                                android:textColor="@color/colorGrey1"
                                 android:background="@drawable/custom_border_area_2"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -219,7 +218,7 @@
                         android:layout_marginTop="@dimen/component_margin_top_default"
                         android:layout_marginBottom="@dimen/component_margin_top_small"
                         android:layout_gravity="center"
-                        app:cardBackgroundColor="@color/color4"
+                        app:cardBackgroundColor="@color/colorButton"
                         app:cardCornerRadius="@dimen/card_corner_radius_large">
                         <Button
                             android:id="@+id/acc_button_encrypt_decrypt"
@@ -227,7 +226,7 @@
                             android:layout_height="match_parent"
                             android:background="@android:color/transparent"
                             android:text="@string/encrypt_button"
-                            android:textColor="@color/color2"
+                            android:textColor="@color/colorWhite1"
                             android:textSize="@dimen/button_text_size"
                             android:layout_gravity="center"/>
                     </android.support.v7.widget.CardView>
@@ -242,7 +241,7 @@
                     android:paddingRight="@dimen/component_padding_large"
                     android:paddingLeft="@dimen/component_padding_large"
                     android:textSize="@dimen/body_font_medium_size"
-                    android:textColor="@color/color3"/>
+                    android:textColor="@color/colorGrey1"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -256,7 +255,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="-"
-                        android:textColor="@color/color3"
+                        android:textColor="@color/colorGrey1"
                         android:textSize="@dimen/body_font_regular_size"/>
                 </LinearLayout>
             </LinearLayout>

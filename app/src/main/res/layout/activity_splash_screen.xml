@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color2"
+    android:background="@color/colorWhite1"
     tools:context=".activity.SplashScreenActivity">
     <LinearLayout
         android:id="@+id/asc_cryptbase_group"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textSize="@dimen/title_font_bold_size"
-            android:textColor="@color/color3"
+            android:textColor="@color/colorGrey1"
             android:layout_marginTop="@dimen/component_margin_top_small"
             android:visibility="gone"/>
     </LinearLayout>

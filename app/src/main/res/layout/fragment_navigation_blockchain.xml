@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:text="This feature is still under construction !"
                 android:textSize="16dp"
-                android:textColor="@color/color3"
+                android:textColor="@color/colorGrey1"
                 android:layout_marginTop="10dp"/>
         </LinearLayout>
     </RelativeLayout>

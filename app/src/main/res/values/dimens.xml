@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Layout -->
+    <dimen name="component_margin_medium">10dp</dimen>
+    <dimen name="component_margin_small">5dp</dimen>
+    <dimen name="component_padding_small">1dp</dimen>
+
+    <dimen name="card_width_medium">100dp</dimen>
+    <dimen name="card_height_medium">125dp</dimen>
+    <dimen name="card_corner_radius">6dp</dimen>
+
+    <dimen name="header_height_medium">50dp</dimen>
+    <dimen name="body_height_medium">40dp</dimen>
+
+    <dimen name="font_bold_medium">18dp</dimen>
+    <dimen name="font_medium_small">13dp</dimen>
+
+    <dimen name="button_height_medium">35dp</dimen>
+    <dimen name="button_text_size">12dp</dimen>
+
+
+
+
+
+
     <dimen name="component_margin_top_large">30dp</dimen>
-    <dimen name="component_margin_top_default">20dp</dimen>
+    <dimen name="component_margin_top_default">10dp</dimen>
     <dimen name="component_margin_top_small">5dp</dimen>
     <dimen name="component_margin_left_right_default">15dp</dimen>
     <dimen name="component_padding_large">15dp</dimen>
@@ -18,10 +40,11 @@
     <dimen name="card_button_height">35dp</dimen>
     <dimen name="card_nav_bottom_height">50dp</dimen> //better 40dp
     <dimen name="card_corner_radius_large">18dp</dimen>
-    <dimen name="card_corner_radius">5dp</dimen>
     <dimen name="image_icon_padding">11dp</dimen>
     <dimen name="line_split_height">2dp</dimen>
-    <!-- Size -->
+
+
+
     <dimen name="title_font_bold_size">20dp</dimen>
     <dimen name="body_font_bold_size">18dp</dimen>
     <dimen name="title_font_medium_size">17dp</dimen> //better
@@ -34,6 +57,5 @@
     <dimen name="image_header_width">200dp</dimen>
     <dimen name="image_header_height">70dp</dimen>
     <dimen name="image_icon_size">35dp</dimen>
-    <dimen name="button_text_size">13dp</dimen>
     <dimen name="spinner_number_size">120dp</dimen>
 </resources>

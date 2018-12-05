@@ -4,8 +4,8 @@ activity_classic_cryptography: body background if one-time pad card view is clic
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="@color/color12"
-        android:endColor="@color/color12"
+        android:startColor="@color/color1"
+        android:endColor="@color/color1"
         android:angle="0"/>
     <corners
         android:topRightRadius="@dimen/card_corner_radius"

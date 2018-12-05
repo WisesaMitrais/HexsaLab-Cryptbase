@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.NavigationHomeFragment"
-    android:background="@color/color2">
+    android:background="@color/colorWhite1">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,6 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <!-- Classic -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -20,38 +21,39 @@
                 <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:gravity="center"
                     android:text="@string/app_home_classic"
-                    android:textSize="@dimen/body_font_bold_size"
-                    android:textColor="@color/color3"/>
+                    android:textSize="@dimen/font_bold_medium"
+                    android:textColor="@color/colorGrey1"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/color6"/>
+                android:layout_height="@dimen/component_padding_small"
+                android:background="@color/colorRed1"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <android.support.v7.widget.CardView
                     android:id="@+id/fnh_caesar_card"
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -61,28 +63,26 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_1"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_red1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/head_name_caesar"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:id="@+id/fnh_caesar_button"
@@ -90,30 +90,30 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
                     android:id="@+id/fnh_scytale_card"
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -123,28 +123,26 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_1"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_red1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/head_name_scytale"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:id="@+id/fnh_scytale_button"
@@ -152,28 +150,28 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
                     android:id="@+id/fnh_onetimepad_card"
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -183,28 +181,26 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_1"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_red1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/head_name_onetimepad"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:id="@+id/fnh_onetimepad_button"
@@ -212,8 +208,8 @@
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -224,50 +220,50 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color2"
-                android:layout_marginTop="10dp">
+                android:background="@color/colorWhite1">
                 <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:gravity="center"
                     android:text="@string/app_home_modern"
-                    android:textSize="@dimen/body_font_bold_size"
-                    android:textColor="@color/color3"/>
+                    android:textSize="@dimen/font_bold_medium"
+                    android:textColor="@color/colorGrey1"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/color7"/>
+                android:layout_height="@dimen/component_padding_small"
+                android:background="@color/colorBlue1"/>
             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/app_home_symmetry"
-                android:textSize="@dimen/body_font_bold_size"
-                android:layout_marginTop="5dp"
+                android:textSize="@dimen/font_bold_medium"
+                android:layout_marginTop="@dimen/component_margin_small"
                 android:paddingLeft="@dimen/component_margin_left_right_default"
-                android:textColor="@color/color11"/>
+                android:textColor="@color/colorGrey2"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -277,57 +273,55 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_2"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_blue1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="DES"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -337,55 +331,53 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_2"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_blue1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="AES"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -395,36 +387,34 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_2"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_blue1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Rivest Cipher"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -436,28 +426,28 @@
                 android:text="@string/app_home_public"
                 android:textSize="@dimen/body_font_bold_size"
                 android:paddingLeft="@dimen/component_margin_left_right_default"
-                android:textColor="@color/color11"/>
+                android:textColor="@color/colorGrey2"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -467,57 +457,55 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_2"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_blue1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="RSA"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -527,55 +515,53 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_2"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_blue1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Elgamal"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -585,36 +571,34 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_2"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_blue1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Elliptic Curve"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -625,42 +609,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color2"
-                android:layout_marginTop="10dp">
+                android:background="@color/colorWhite1">
                 <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:gravity="center"
                     android:text="@string/app_home_hash"
-                    android:textSize="@dimen/body_font_bold_size"
-                    android:textColor="@color/color3"/>
+                    android:textSize="@dimen/font_bold_medium"
+                    android:textColor="@color/colorGrey1"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/color8"/>
+                android:layout_height="@dimen/component_padding_small"
+                android:background="@color/colorGreen1"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -670,57 +653,55 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_3"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_green1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Message Digest"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -730,55 +711,53 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_3"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_green1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="SHA"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -788,36 +767,34 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_3"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_green1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="HMAC"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
@@ -828,42 +805,41 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/color2"
-                android:layout_marginTop="10dp">
+                android:background="@color/colorWhite1">
                 <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:gravity="center"
-                    android:text="@string/app_home_other"
-                    android:textSize="@dimen/body_font_bold_size"
-                    android:textColor="@color/color3"/>
+                    android:text="@string/app_home_applied"
+                    android:textSize="@dimen/font_bold_medium"
+                    android:textColor="@color/colorGrey1"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/color9"/>
+                android:layout_height="@dimen/component_padding_small"
+                android:background="@color/colorYellow1"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_marginLeft="@dimen/component_padding_default"
-                    android:layout_marginTop="@dimen/component_padding_default"
-                    android:layout_marginBottom="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_marginLeft="@dimen/component_margin_medium"
+                    android:layout_marginTop="@dimen/component_margin_medium"
+                    android:layout_marginBottom="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -873,55 +849,53 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_4"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_yellow1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Digital Signature"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
                 <android.support.v7.widget.CardView
-                    android:layout_width="100dp"
+                    android:layout_width="@dimen/card_width_medium"
                     android:layout_weight="1"
-                    android:layout_height="125dp"
-                    android:layout_margin="@dimen/component_padding_default"
+                    android:layout_height="@dimen/card_height_medium"
+                    android:layout_margin="@dimen/component_margin_medium"
                     android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
-                    app:cardBackgroundColor="@color/color2">
+                    app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="@dimen/header_height_medium"
                             android:orientation="horizontal">
                             <ImageView
                                 android:layout_width="match_parent"
@@ -931,36 +905,34 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="@drawable/custom_round_gradient_color_4"
-                                android:orientation="vertical"
-                                android:paddingLeft="@dimen/component_padding_default"
-                                android:paddingTop="@dimen/component_padding_large"/>
+                                android:background="@drawable/custom_round_gradient_color_yellow1"
+                                android:orientation="vertical"/>
                         </RelativeLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="40dp"
+                            android:layout_height="@dimen/body_height_medium"
                             android:orientation="vertical"
-                            android:paddingLeft="1dp"
-                            android:paddingRight="1dp"
+                            android:paddingLeft="@dimen/component_padding_small"
+                            android:paddingRight="@dimen/component_padding_small"
                             android:gravity="center">
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Steganography"
-                                android:textColor="@color/color3"
-                                android:textSize="13dp"/>
+                                android:textColor="@color/colorGrey1"
+                                android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="35dp"
+                            android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
                                 android:text="@string/button_try"
-                                android:textColor="@color/color4"
-                                android:textSize="12dp"
+                                android:textColor="@color/colorButton"
+                                android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
                         </LinearLayout>
                     </LinearLayout>

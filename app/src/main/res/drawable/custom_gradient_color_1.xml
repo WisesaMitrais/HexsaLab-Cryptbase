@@ -5,8 +5,8 @@ activity_classic_cryptography: header background if caesar card view is clicked.
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="@color/color6"
-        android:endColor="@color/color6"
+        android:startColor="@color/colorRed1"
+        android:endColor="@color/colorRed1"
         android:angle="0"/>
     <corners
         android:radius="0dp"/>

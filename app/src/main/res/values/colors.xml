@@ -5,16 +5,16 @@
     <color name="colorAccent">#0396FF</color>
 
     <!-- Custom colors of Cryptbase -->
+    <color name="colorWhite1">#FFFFFF</color>
+    <color name="colorGrey1">#607D8B</color>
+    <color name="colorGrey2">#90ADBB</color>
+    <color name="colorRed1">#BBE96D71</color>
+    <color name="colorBlue1">#BB736EfE</color>
+    <color name="colorGreen1">#BB28C76F</color>
+    <color name="colorYellow1">#BBFDD835</color>
+    <color name="colorButton">#0396FF</color>
+
     <color name="color1">#EDEDED</color>
-    <color name="color2">#FFFFFF</color>
-    <color name="color3">#607D8B</color>
-    <color name="color4">#0396FF</color>
     <color name="color5">#F0F0F0</color>
-    <color name="color6">#BBE96D71</color>
-    <color name="color7">#BB736EfE</color>
-    <color name="color8">#BB28C76F</color>
-    <color name="color9">#BBFDD835</color>
     <color name="color10">#C0C0C0</color>
-    <color name="color11">#90ADBB</color>
-    <color name="color12">#DD8D6E63</color>
 </resources>

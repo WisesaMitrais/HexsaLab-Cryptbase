@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Used in
-activity_classic_cryptography: body background if caesar card view is clicked.
+activity_classic_cryptography: body background if one-time pad card view is clicked.
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="@color/color6"
-        android:endColor="@color/color6"
+        android:startColor="@color/colorYellow1"
+        android:endColor="@color/colorYellow1"
         android:angle="0"/>
     <corners
         android:topRightRadius="@dimen/card_corner_radius"

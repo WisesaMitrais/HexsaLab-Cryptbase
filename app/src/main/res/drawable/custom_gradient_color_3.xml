@@ -5,8 +5,8 @@ activity_classic_cryptography: header background if one-time pad card view is cl
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
-        android:startColor="@color/color8"
-        android:endColor="@color/color8"
+        android:startColor="@color/colorGreen1"
+        android:endColor="@color/colorGreen1"
         android:angle="0"/>
     <corners
         android:radius="0dp"/>
