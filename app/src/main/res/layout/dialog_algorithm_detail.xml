@@ -65,13 +65,18 @@
                     android:layout_marginTop="@dimen/component_margin_small"
                     android:paddingLeft="@dimen/component_padding_medium"
                     android:paddingRight="@dimen/component_padding_medium"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorGrey2"
+                    android:layout_marginBottom="@dimen/component_margin_small"
+                    android:layout_marginTop="@dimen/component_margin_large"/>
                 <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Internet references:"
                     android:textSize="@dimen/font_medium_small"
                     android:textColor="@color/colorGrey1"
-                    android:layout_marginTop="@dimen/component_margin_large"
                     android:paddingLeft="@dimen/component_padding_medium"
                     android:paddingRight="@dimen/component_padding_medium"/>
                 <LinearLayout

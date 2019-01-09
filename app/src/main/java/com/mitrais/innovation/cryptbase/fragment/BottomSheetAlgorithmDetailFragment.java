@@ -1,6 +1,8 @@
 package com.mitrais.innovation.cryptbase.fragment;
 
 import android.app.Dialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -15,6 +17,9 @@ import com.mitrais.innovation.cryptbase.R;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class AlgorithmDetailData{
 
@@ -61,6 +66,20 @@ class AlgorithmDetailData{
             R.string.body_desc_ec, R.string.body_desc_md,
             R.string.body_desc_sha, R.string.body_desc_hmac,
             R.string.body_desc_ds, R.string.body_desc_stega};
+    public static final int[] TEXT_LINK_1 = {R.string.caesar_link_1, R.string.scytale_link_1,
+            R.string.otp_link_1, R.string.des_link_1,
+            R.string.aes_link_1, R.string.rc_link_1,
+            R.string.rsa_link_1, R.string.elgamal_link_1,
+            R.string.ec_link_1, R.string.md_link_1,
+            R.string.sha_link_1, R.string.hmac_link_1,
+            R.string.ds_link_1, R.string.stega_link_1};
+    public static final int[] TEXT_LINK_2 = {R.string.caesar_link_2, R.string.scytale_link_2,
+            R.string.otp_link_2, R.string.des_link_2,
+            R.string.aes_link_2, R.string.rc_link_2,
+            R.string.rsa_link_2, R.string.elgamal_link_2,
+            R.string.ec_link_2, R.string.md_link_2,
+            R.string.sha_link_2, R.string.hmac_link_2,
+            R.string.ds_link_2, R.string.stega_link_2};
 }
 
 public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragment {
@@ -72,6 +91,7 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
     private FontQuicksandMedium bodyTitle, bodyDesc;
     private FontQuicksandRegular textLink1, textLink2;
     private int cardValue;
+    private String tempString;
 
     /**
      * OnCreate method.
@@ -125,8 +145,56 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
         headerTitle.setText(AlgorithmDetailData.HEADER_TITLE[cardValue - 1]);
         bodyTitle.setText(AlgorithmDetailData.BODY_TITLE[cardValue - 1]);
         bodyDesc.setText(AlgorithmDetailData.BODY_DESC[cardValue - 1]);
-        textLink1.setText("en.wikipedia.org");
-        textLink2.setText("learncryptography.com");
+        /* Set text link 1 and 2. */
+        tempString = getString(AlgorithmDetailData.TEXT_LINK_1[cardValue - 1]);
+        tempString = extractStringFromURL(tempString);
+        textLink1.setText(tempString);
+        tempString = getString(AlgorithmDetailData.TEXT_LINK_2[cardValue - 1]);
+        tempString = extractStringFromURL(tempString);
+        textLink2.setText(tempString);
+        setOnClickTextLink();
+    }
+
+    /**
+     * Set data content in modal bottom sheet for algorithm detail.
+     * @param url: url string.
+     */
+    private String extractStringFromURL(String url){
+        String result = "";
+        Pattern pattern = Pattern.compile("//(.*?)/");
+        Matcher matcher = pattern.matcher(url);
+        if (matcher.find()) {
+            result = matcher.group(1);
+        }
+        return result;
+    }
+
+    /**
+     * Set action when text link clicked.
+     */
+    private void setOnClickTextLink(){
+        textLink1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTextLink(getString(AlgorithmDetailData.TEXT_LINK_1[cardValue - 1]));
+            }
+        });
+        textLink2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTextLink(getString(AlgorithmDetailData.TEXT_LINK_2[cardValue - 1]));
+            }
+        });
+    }
+
+    /**
+     * Open text link with activity.
+     * @param url: url string.
+     */
+    private void openTextLink(String url){
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
     /**
