@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Default Color -->
     <color name="colorPrimary">#0396FF</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#0396FF</color>
-
-    <!-- Custom colors of Cryptbase -->
+    <!-- Custom Colors of Cryptbase -->
     <color name="colorWhite1">#FFFFFF</color>
     <color name="colorGrey1">#607D8B</color>
     <color name="colorGrey2">#90ADBB</color>
@@ -13,8 +13,4 @@
     <color name="colorGreen1">#BB28C76F</color>
     <color name="colorYellow1">#BBFDD835</color>
     <color name="colorButton">#0396FF</color>
-
-    <color name="color1">#EDEDED</color>
-    <color name="color5">#F0F0F0</color>
-    <color name="color10">#C0C0C0</color>
 </resources>

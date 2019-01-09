@@ -7,19 +7,144 @@
     <string name="app_home_public">Public Key</string>
     <string name="app_home_hash">Hash Function Cryptography</string>
     <string name="app_home_applied">Applied Cryptography</string>
-
     <!-- Header -->
     <string name="head_name_caesar">Caesar Cipher</string>
     <string name="head_name_scytale">Scytale Cipher</string>
     <string name="head_name_onetimepad">One-Time Pad</string>
-
+    <string name="head_name_des">DES</string>
+    <string name="head_name_aes">AES</string>
+    <string name="head_name_rc">Rivest Cipher</string>
+    <string name="head_name_rsa">RSA</string>
+    <string name="head_name_elgamal">Elgamal</string>
+    <string name="head_name_ec">Elliptic Curve</string>
+    <string name="head_name_md">Message Digest</string>
+    <string name="head_name_sha">SHA</string>
+    <string name="head_name_hmac">HMAC</string>
+    <string name="head_name_ds">Digital Signature</string>
+    <string name="head_name_stega">Steganography</string>
+    <!-- Body -->
+    <string name="body_title_caesar">Substitution Method</string>
+    <string name="body_title_scytale">Transposition Method</string>
+    <string name="body_title_onetimepad">The Unbreakable Cipher</string>
+    <string name="body_title_des">Data Encryption Standard</string>
+    <string name="body_title_aes">Advanced Encryption Standard</string>
+    <string name="body_title_rc">Symmetry Key Based Encryption</string>
+    <string name="body_title_rsa">Rivest-Shamir-Adleman</string>
+    <string name="body_title_elgamal">Elgamal Cryptosystems</string>
+    <string name="body_title_ec">Elliptic Curve Cryptography</string>
+    <string name="body_title_md">Hash Function Based Encryption</string>
+    <string name="body_title_sha">Secure Hash Algorithm</string>
+    <string name="body_title_hmac">Hash Message Authentication Code</string>
+    <string name="body_title_ds">Digital Message Validation</string>
+    <string name="body_title_stega">The Practice of Concealing A File</string>
+    <string name="body_desc_caesar">In cryptography, a Caesar cipher, also known as Caesar\'s cipher,
+        the shift cipher, Caesar\'s code or Caesar shift, is one of the simplest and most widely
+        known encryption techniques. It is a type of substitution cipher in which each letter in the
+        plaintext is replaced by a letter some fixed number of positions down the alphabet.</string>
+    <string name="body_desc_scytale">In cryptography, a scytale is a tool used to perform a
+        transposition cipher, consisting of a cylinder with a strip of parchment wound around it on
+        which is written a message.</string>
+    <string name="body_desc_onetimepad">In cryptography, the one-time pad (OTP) is an encryption
+        technique that cannot be cracked, but requires the use of a one-time pre-shared key the same
+        size as, or longer than, the message being sent. In this technique, a plaintext is paired
+        with a random secret key (also referred to as a one-time pad).</string>
+    <string name="body_desc_des">The Data Encryption Standard is a symmetric-key algorithm for the
+        encryption of electronic data. Although its short key length of 56 bits, criticized from the
+        beginning, makes it too insecure for most current applications, it was highly influential in
+        the advancement of modern cryptography.</string>
+    <string name="body_desc_aes">The Advanced Encryption Standard (AES), also known by its original
+        name Rijndael is a specification for the encryption of electronic data established by the
+        U.S. National Institute of Standards and Technology (NIST) in 2001. AES is a subset of the
+        Rijndael block cipher developed by two Belgian cryptographers, Vincent Rijmen and Joan
+        Daemen.</string>
+    <string name="body_desc_rc">The RC algorithms are a set of symmetric-key encryption algorithms
+        invented by Ron Rivest. RC1 was never published. RC2 was a 64-bit block cipher developed in
+        1987. RC3 was broken before ever being used. RC4 is the world\'s most widely used stream
+        cipher. RC5 is a 32/64/128-bit block cipher developed in 1994. RC6, a 128-bit block cipher
+        based heavily on RC5, was an AES finalist developed in 1997.</string>
+    <string name="body_desc_rsa">RSA (Rivest–Shamir–Adleman) is one of the first public-key
+        cryptosystems and is widely used for secure data transmission. In such a cryptosystem,
+        the encryption key is public and it is different from the decryption key which is kept
+        secret (private). In RSA, this asymmetry is based on the practical difficulty of the
+        factorization of the product of two large prime numbers, the "factoring problem".</string>
+    <string name="body_desc_elgamal">In cryptography, the ElGamal encryption system is an asymmetric
+        key encryption algorithm for public-key cryptography which is based on the Diffie–Hellman
+        key exchange. The system provides an additional layer of security by asymmetrically
+        encrypting keys previously used for symmetric message encryption. ElGamal encryption is used
+        in the free GNU Privacy Guard software, recent versions of PGP, and other
+        cryptosystems.</string>
+    <string name="body_desc_ec">Elliptic-curve cryptography (ECC) is an approach to public-key
+        cryptography based on the algebraic structure of elliptic curves over finite fields.
+        ECC requires smaller keys compared to non-EC cryptography (based on plain Galois fields)
+        to provide equivalent security. Elliptic curves are applicable for key agreement, digital
+        signatures, pseudo-random generators and other tasks.</string>
+    <string name="body_desc_md">Message digest algorithms rely on cryptographic hash functions to
+        generate a unique value that is computed from data and a unique symmetric key. A
+        cryptographic hash function inputs data of arbitrary length and produces a unique value of a
+        fixed length. Because message digest algorithms generate a value that is always used in
+        encrypted form (never decrypted), they are sometimes known as encryption-only
+        algorithms.</string>
+    <string name="body_desc_sha">Secure Hashing Algorithms, also known as SHA, are a family of
+        cryptographic functions designed to keep data secured. It works by transforming the data
+        using a hash function: an algorithm that consists of bitwise operations, modular additions,
+        and compression functions. The hash function then produces a fixed size string that looks
+        nothing like the original. A few algorithms of interest are SHA-1, SHA-2, and SHA-3.</string>
+    <string name="body_desc_hmac">In cryptography, an HMAC is a specific type of message
+        authentication code (MAC) involving a cryptographic hash function and a secret cryptographic
+        key. It may be used to simultaneously verify both the data integrity and the authentication
+        of a message, as with any MAC. HMAC uses two passes of hash computation. The secret key is
+        first used to derive two keys – inner and outer. </string>
+    <string name="body_desc_ds">A digital signature is a mathematical scheme for verifying the
+        authenticity of digital messages or documents. A valid digital signature gives a recipient
+        reason to believe that the message was created by a known sender (authentication), that the
+        sender cannot deny having sent the message (non-repudiation), and that the message was not
+        altered in transit (integrity).</string>
+    <string name="body_desc_stega">Steganography is the practice of concealing a file, message,
+        image, or video within another file, message, image, or video. The advantage of steganography
+        over cryptography alone is that the intended secret message does not attract attention to
+        itself as an object of scrutiny. Whereas cryptography is the practice of protecting the
+        contents of a message alone, steganography is concerned with concealing the fact that a
+        secret message is being sent as well as concealing the contents of the message.</string>
     <!-- Button -->
     <string name="button_try">TRY</string>
-
+    <string name="button_detail">DETAIL</string>
     <!-- Other -->
-    <string name="tran_name_caesar">fnh_tn_caesar</string>
-    <string name="tran_name_scytale">fnh_tn_scytale</string>
-    <string name="tran_name_onetimepad">fnh_tn_onetimepad</string>
+    <string name="caesar_link_1">https://en.wikipedia.org/wiki/Caesar_cipher</string>
+    <string name="caesar_link_2">https://learncryptography.com/classical-encryption/caesar-cipher
+    </string>
+    <string name="scytale_link_1">https://en.wikipedia.org/wiki/Scytale</string>
+    <string name="scytale_link_2">https://learncryptography.com/classical-encryption/transposition
+        -ciphers</string>
+    <string name="des_link_1">https://en.wikipedia.org/wiki/Data_Encryption_Standard</string>
+    <string name="des_link_2">https://www.tutorialspoint.com/cryptography/data_encryption_standard.
+        htm</string>
+    <string name="aes_link_1">https://en.wikipedia.org/wiki/Advanced_Encryption_Standard</string>
+    <string name="aes_link_2">https://aesencryption.net/</string>
+    <string name="rc_link_1">https://en.wikipedia.org/wiki/RC_algorithm</string>
+    <string name="rc_link_2">https://www.revolvy.com/page/RC-algorithm</string>
+    <string name="rsa_link_1">https://en.wikipedia.org/wiki/RSA_(cryptosystem)</string>
+    <string name="rsa_link_2">https://www.rsa.com/</string>
+    <string name="elgamal_link_1">https://en.wikipedia.org/wiki/Elgamal</string>
+    <string name="elgamal_link_2">https://asecuritysite.com/encryption/elgamal</string>
+    <string name="ec_link_1">https://en.wikipedia.org/wiki/Elliptic-curve_cryptography</string>
+    <string name="ec_link_2">https://medium.com/coinmonks/elliptic-curve-cryptography-6de8fc748b8b
+    </string>
+    <string name="md_link_1">https://en.wikipedia.org/wiki/MD5</string>
+    <string name="md_link_2">https://www.techopedia.com/definition/4024/message-digest</string>
+    <string name="sha_link_1">https://en.wikipedia.org/wiki/Secure_Hash_Algorithms</string>
+    <string name="sha_link_2">https://brilliant.org/wiki/secure-hashing-algorithms/</string>
+    <string name="hmac_link_1">https://en.wikipedia.org/wiki/HMAC</string>
+    <string name="hmac_link_2">https://www.geeksforgeeks.org/computer-network-hmac-algorithm/
+    </string>
+    <string name="ds_link_1">https://en.wikipedia.org/wiki/Digital_signature</string>
+    <string name="ds_link_2">https://www.hellosign.com/digital-signature</string>
+    <string name="stega_link_1">https://en.wikipedia.org/wiki/Steganography</string>
+    <string name="stega_link_2">https://securelist.com/steganography-in-contemporary-cyberattacks/
+        79276/</string>
+
+
+
+
 
 
 
@@ -32,15 +157,6 @@
     <string name="plain_text">Plaintext</string>
     <string name="cipher_text">Ciphertext</string>
     <string name="key_text">Key</string>
-
-
-    <string name="body_desc_caesar">A method of encryption by which units of plaintext are replaced
-        with ciphertext, according to a fixed system.</string>
-    <string name="body_desc_scytale">A method of encryption by which the positions held by units of
-        plaintext are shifted according to a regular system.</string>
-    <string name="body_desc_onetimepad">An encryption method that cannot be cracked, but require
-        a one-time key with same size with message being sent.</string>
-
     <string-array name="caesar_key_array">
         <item>1</item> <item>2</item> <item>3</item> <item>4</item> <item>5</item>
         <item>6</item> <item>7</item> <item>8</item> <item>9</item> <item>10</item>

@@ -13,7 +13,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
             <!-- Classic -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +43,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -89,7 +87,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -104,7 +102,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -149,7 +146,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -162,7 +159,6 @@
                     android:layout_weight="1"
                     android:layout_height="@dimen/card_height_medium"
                     android:layout_margin="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -207,7 +203,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -215,7 +211,6 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
-
             <!-- Modern -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -238,10 +233,10 @@
             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/app_home_symmetry"
+                android:text=   "@string/app_home_symmetry"
                 android:textSize="@dimen/font_bold_medium"
                 android:layout_marginTop="@dimen/component_margin_small"
-                android:paddingLeft="@dimen/component_margin_left_right_default"
+                android:paddingLeft="@dimen/component_padding_medium"
                 android:textColor="@color/colorGrey2"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -254,7 +249,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -286,7 +280,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="DES"
+                                android:text="@string/head_name_des"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -295,10 +289,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_des_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -312,7 +307,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -344,7 +338,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="AES"
+                                android:text="@string/head_name_aes"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -353,10 +347,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_aes_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -368,7 +363,6 @@
                     android:layout_weight="1"
                     android:layout_height="@dimen/card_height_medium"
                     android:layout_margin="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -400,7 +394,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Rivest Cipher"
+                                android:text="@string/head_name_rc"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -409,10 +403,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_rc_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -424,8 +419,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/app_home_public"
-                android:textSize="@dimen/body_font_bold_size"
-                android:paddingLeft="@dimen/component_margin_left_right_default"
+                android:textSize="@dimen/font_bold_medium"
+                android:paddingLeft="@dimen/component_padding_medium"
                 android:textColor="@color/colorGrey2"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -438,7 +433,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -470,7 +464,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="RSA"
+                                android:text="@string/head_name_rsa"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -479,10 +473,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_rsa_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -496,7 +491,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -528,7 +522,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Elgamal"
+                                android:text="@string/head_name_elgamal"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -537,10 +531,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_elgamal_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -552,7 +547,6 @@
                     android:layout_weight="1"
                     android:layout_height="@dimen/card_height_medium"
                     android:layout_margin="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -584,7 +578,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Elliptic Curve"
+                                android:text="@string/head_name_ec"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -593,10 +587,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_ec_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -634,7 +629,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -666,7 +660,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Message Digest"
+                                android:text="@string/head_name_md"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -675,10 +669,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_md_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -692,7 +687,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -724,7 +718,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="SHA"
+                                android:text="@string/head_name_sha"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -733,10 +727,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_sha_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -748,7 +743,6 @@
                     android:layout_weight="1"
                     android:layout_height="@dimen/card_height_medium"
                     android:layout_margin="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -780,7 +774,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="HMAC"
+                                android:text="@string/head_name_hmac"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -789,10 +783,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_hmac_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -800,7 +795,6 @@
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
-
             <!-- Applied -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -830,7 +824,6 @@
                     android:layout_marginLeft="@dimen/component_margin_medium"
                     android:layout_marginTop="@dimen/component_margin_medium"
                     android:layout_marginBottom="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -862,7 +855,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Digital Signature"
+                                android:text="@string/head_name_ds"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -871,10 +864,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_ds_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>
@@ -886,7 +880,6 @@
                     android:layout_weight="1"
                     android:layout_height="@dimen/card_height_medium"
                     android:layout_margin="@dimen/component_margin_medium"
-                    android:transitionName="@string/tran_name_caesar"
                     app:cardCornerRadius="@dimen/card_corner_radius"
                     app:cardBackgroundColor="@color/colorWhite1">
                     <LinearLayout
@@ -918,7 +911,7 @@
                             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Steganography"
+                                android:text="@string/head_name_stega"
                                 android:textColor="@color/colorGrey1"
                                 android:textSize="@dimen/font_medium_small"/>
                         </LinearLayout>
@@ -927,10 +920,11 @@
                             android:layout_height="@dimen/button_height_medium"
                             android:gravity="center">
                             <Button
+                                android:id="@+id/fnh_stega_button"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@android:color/transparent"
-                                android:text="@string/button_try"
+                                android:text="@string/button_detail"
                                 android:textColor="@color/colorButton"
                                 android:textSize="@dimen/button_text_size"
                                 android:gravity="center"/>

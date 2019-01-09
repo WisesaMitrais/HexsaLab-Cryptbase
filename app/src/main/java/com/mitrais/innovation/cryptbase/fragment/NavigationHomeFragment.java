@@ -3,8 +3,7 @@ package com.mitrais.innovation.cryptbase.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
+import android.support.design.widget.BottomSheetDialogFragment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,17 +11,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.mitrais.innovation.cryptbase.R;
-import com.mitrais.innovation.cryptbase.activity.ClassicCryptographyActivity;
-
-import java.util.Objects;
 
 public class NavigationHomeFragment extends Fragment {
 
-    /*Declare global variables.*/
-    Intent intent;
-    Button buttonTryCaesar, buttonTryScytale, buttonTryOneTimePad;
-    String transitionName;
-    View viewStart;
+    /* Global variables. */
+    private Intent intent;
+    private Button bDetailCaesar, bDetailScytale, bDetailOTP, bDetailDES, bDetailAES, bDetailRC;
+    private Button bDetailRSA, bDetailElgamal, bDetailEC, bDetailMD, bDetailSHA, bDetailHMAC;
+    private Button bDetailDS, bDetailStega;
     Bundle bundle;
 
     /**
@@ -49,28 +45,102 @@ public class NavigationHomeFragment extends Fragment {
         final View viewHomeFragment = inflater.inflate(R.layout.fragment_navigation_home, container,
                 false);
         initializeComponents(viewHomeFragment);
-        /*When caesar try button is clicked.*/
-        buttonTryCaesar.setOnClickListener(new View.OnClickListener() {
+        /* Caesar detail button. */
+        bDetailCaesar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonOnClickAction(viewHomeFragment, R.string.tran_name_caesar,
-                        R.id.fnh_caesar_card, 1);
+                buttonOnClickAction(1);
             }
         });
-        /*When scytale try button is clicked.*/
-        buttonTryScytale.setOnClickListener(new View.OnClickListener() {
+        /* Scytale detail button. */
+        bDetailScytale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonOnClickAction(viewHomeFragment, R.string.tran_name_scytale,
-                        R.id.fnh_scytale_card, 2);
+                buttonOnClickAction(2);
             }
         });
-        /*When one-time pad try button is clicked.*/
-        buttonTryOneTimePad.setOnClickListener(new View.OnClickListener() {
+        /* One-time pad detail button. */
+        bDetailOTP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonOnClickAction(viewHomeFragment, R.string.tran_name_onetimepad,
-                        R.id.fnh_onetimepad_card, 3);
+                buttonOnClickAction(3);
+            }
+        });
+        /* DES detail button. */
+        bDetailDES.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(4);
+            }
+        });
+        /* AES detail button. */
+        bDetailAES.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(5);
+            }
+        });
+        /* Rivest cipher detail button. */
+        bDetailRC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(6);
+            }
+        });
+        /* RSA detail button. */
+        bDetailRSA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(7);
+            }
+        });
+        /* Elgamal detail button. */
+        bDetailElgamal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(8);
+            }
+        });
+        /* Elliptic curve detail button. */
+        bDetailEC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(9);
+            }
+        });
+        /* Message digest detail button. */
+        bDetailMD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(10);
+            }
+        });
+        /* SHA detail button. */
+        bDetailSHA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(11);
+            }
+        });
+        /* HMAC detail button. */
+        bDetailHMAC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(12);
+            }
+        });
+        /* Digital signature detail button. */
+        bDetailDS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(13);
+            }
+        });
+        /* Steganography detail button. */
+        bDetailStega.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonOnClickAction(14);
             }
         });
         return viewHomeFragment;
@@ -81,34 +151,31 @@ public class NavigationHomeFragment extends Fragment {
      * @param viewHomeFragment: a view that show on home fragment.
      */
     private void initializeComponents(View viewHomeFragment){
-        intent = new Intent(getActivity(), ClassicCryptographyActivity.class);                      //Ordinary Intent for launching a new activity.
         bundle = new Bundle();
-        buttonTryCaesar = viewHomeFragment.findViewById(R.id.fnh_caesar_button);
-        buttonTryScytale = viewHomeFragment.findViewById(R.id.fnh_scytale_button);
-        buttonTryOneTimePad = viewHomeFragment.findViewById(R.id.fnh_onetimepad_button);
+        bDetailCaesar = viewHomeFragment.findViewById(R.id.fnh_caesar_button);
+        bDetailScytale = viewHomeFragment.findViewById(R.id.fnh_scytale_button);
+        bDetailOTP = viewHomeFragment.findViewById(R.id.fnh_onetimepad_button);
+        bDetailDES = viewHomeFragment.findViewById(R.id.fnh_des_button);
+        bDetailAES = viewHomeFragment.findViewById(R.id.fnh_aes_button);
+        bDetailRC = viewHomeFragment.findViewById(R.id.fnh_rc_button);
+        bDetailRSA = viewHomeFragment.findViewById(R.id.fnh_rsa_button);
+        bDetailElgamal = viewHomeFragment.findViewById(R.id.fnh_elgamal_button);
+        bDetailEC = viewHomeFragment.findViewById(R.id.fnh_ec_button);
+        bDetailMD = viewHomeFragment.findViewById(R.id.fnh_md_button);
+        bDetailSHA = viewHomeFragment.findViewById(R.id.fnh_sha_button);
+        bDetailHMAC = viewHomeFragment.findViewById(R.id.fnh_hmac_button);
+        bDetailDS = viewHomeFragment.findViewById(R.id.fnh_ds_button);
+        bDetailStega = viewHomeFragment.findViewById(R.id.fnh_stega_button);
     }
 
     /**
      * Define an action when one of the try button is clicked.
-     * @param viewHomeFragment: a view that show on home fragment..
-     * @param transitionNameValue: R id from string transition name.
-     * @param viewStartValue: R id from string card view.
      * @param activeCardValue: a number that identify active card.
      */
-    private void buttonOnClickAction(View viewHomeFragment, int transitionNameValue,
-                                     int viewStartValue, int activeCardValue){
-        transitionName = getString(transitionNameValue);
-        viewStart = viewHomeFragment.findViewById(viewStartValue);                                  //Define the view that the animation will start from.
-        ActivityOptionsCompat options =
-                ActivityOptionsCompat.makeSceneTransitionAnimation(
-                        Objects.requireNonNull(getActivity()),
-                        viewStart,
-                        transitionName
-                );
-        /*Start the intent.*/
+    private void buttonOnClickAction(int activeCardValue){
+        BottomSheetDialogFragment bottomSheet = new BottomSheetAlgorithmDetailFragment();
         bundle.putInt("activeCard", activeCardValue);
-        intent.putExtras(bundle);
-        ActivityCompat.startActivity(Objects.requireNonNull(getContext()), intent,
-                options.toBundle());
+        bottomSheet.setArguments(bundle);
+        bottomSheet.show(getFragmentManager(), bottomSheet.getTag());
     }
 }

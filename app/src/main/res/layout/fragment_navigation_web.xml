@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color1"
+    android:background="@color/colorWhite1"
     tools:context=".fragment.NavigationNewsFragment">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,16 +15,16 @@
             android:layout_centerInParent="true"
             android:gravity="center">
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="@dimen/logo_size_medium"
+                android:layout_height="@dimen/logo_size_medium"
                 android:src="@drawable/img_under_construction_icon"/>
             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="This feature is still under construction !"
-                android:textSize="16dp"
+                android:textSize="@dimen/font_medium_small"
                 android:textColor="@color/colorGrey1"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="@dimen/component_margin_medium"/>
         </LinearLayout>
     </RelativeLayout>
 </FrameLayout>

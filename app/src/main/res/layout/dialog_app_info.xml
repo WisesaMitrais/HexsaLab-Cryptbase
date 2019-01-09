@@ -11,56 +11,56 @@
         android:layout_centerInParent="true">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/card_title_height"
-            android:background="@color/colorButton">
+            android:layout_height="@dimen/card_height_small"
+            android:background="@color/colorPrimary">
             <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Application Info"
                 android:textColor="@color/colorWhite1"
-                android:textSize="@dimen/title_font_medium_size"
+                android:textSize="@dimen/font_medium_medium"
                 android:gravity="center_vertical"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="@dimen/component_padding_medium"/>
         </LinearLayout>
         <ImageView
-            android:layout_width="@dimen/image_logo_size"
-            android:layout_height="@dimen/image_logo_size"
-            android:layout_marginTop="@dimen/component_margin_top_default"
+            android:layout_width="@dimen/logo_size_medium"
+            android:layout_height="@dimen/logo_size_medium"
+            android:layout_marginTop="@dimen/component_margin_medium"
             android:layout_gravity="center"
             android:src="@drawable/img_cryptbase_icon"/>
         <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cryptbase /ver.1.1"
-            android:textSize="@dimen/body_font_bold_size"
+            android:text="Cryptbase /v1.2"
+            android:textSize="@dimen/font_bold_medium"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/component_margin_top_small"/>
+            android:layout_marginTop="@dimen/component_margin_small"/>
         <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Created by HexsaLab. 2018"
-            android:textSize="@dimen/body_font_regular_size"
+            android:textSize="@dimen/font_regular_medium"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/component_margin_top_small"/>
+            android:layout_marginTop="@dimen/component_margin_small"/>
         <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contents :"
-            android:textSize="@dimen/body_font_regular_size"
-            android:layout_marginTop="@dimen/component_margin_top_default"
-            android:layout_marginLeft="@dimen/component_margin_left_right_default"
-            android:layout_marginRight="@dimen/component_margin_left_right_default"/>
+            android:textSize="@dimen/font_regular_medium"
+            android:layout_marginTop="@dimen/component_margin_medium"
+            android:layout_marginLeft="@dimen/component_margin_medium"
+            android:layout_marginRight="@dimen/component_margin_medium"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/border_area_static_height"
+            android:layout_height="@dimen/card_height_large"
             android:background="@drawable/custom_border_area"
-            android:layout_marginLeft="@dimen/component_margin_left_right_default"
-            android:layout_marginRight="@dimen/component_margin_left_right_default"
-            android:layout_marginTop="@dimen/component_margin_top_small">
+            android:layout_marginLeft="@dimen/component_margin_medium"
+            android:layout_marginRight="@dimen/component_margin_medium"
+            android:layout_marginTop="@dimen/component_margin_small">
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="@dimen/component_padding_default">
+                android:padding="@dimen/component_padding_medium">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -69,115 +69,115 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Classic Cryptography"
-                        android:textSize="@dimen/body_font_regular_size"/>
+                        android:textSize="@dimen/font_regular_medium"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 Caesar Cipher"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 Scytale Cipher"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 One-Time Pad"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Modern Cryptography - Symmetry Key"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_default"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_medium"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 DES Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 AES Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 RC Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Modern Cryptography - Public Key"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_default"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_medium"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 RSA Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 Elgamal Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 Elliptic Curve Cryptography"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Hash Function Cryptography"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_default"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_medium"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 MD Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 SHA Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 HMAC Cryptosystems"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Others"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_default"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_medium"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 Digital Signature"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                     <com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u0009\u2022 Steganography"
-                        android:textSize="@dimen/body_font_regular_size"
-                        android:layout_marginTop="@dimen/component_margin_top_small"/>
+                        android:textSize="@dimen/font_regular_medium"
+                        android:layout_marginTop="@dimen/component_margin_small"/>
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
