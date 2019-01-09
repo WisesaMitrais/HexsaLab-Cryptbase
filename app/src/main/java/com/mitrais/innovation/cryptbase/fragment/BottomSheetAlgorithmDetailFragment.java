@@ -10,10 +10,12 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialogFragment;
 import android.support.design.widget.CoordinatorLayout;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.mitrais.innovation.cryptbase.R;
+import com.mitrais.innovation.cryptbase.activity.TryClassicAlgorithmActivity;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular;
@@ -92,6 +94,7 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
     private FontQuicksandRegular textLink1, textLink2;
     private int cardValue;
     private String tempString;
+    private Button buttonTry;
 
     /**
      * OnCreate method.
@@ -133,6 +136,8 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
         textLink1 = view.findViewById(R.id.dad_link_1);
         textLink2 = view.findViewById(R.id.dad_link_2);
         setContent(cardValue);
+        buttonTry = view.findViewById(R.id.dad_button_try);
+        setButtonAction();
     }
 
     /**
@@ -157,7 +162,8 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
 
     /**
      * Set data content in modal bottom sheet for algorithm detail.
-     * @param url: url string.
+     * @param url: URL string.
+     * @return a substring from URL.
      */
     private String extractStringFromURL(String url){
         String result = "";
@@ -195,6 +201,30 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
         Uri uri = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
+    }
+
+    /**
+     * Set action when try button clicked.
+     */
+    private void setButtonAction(){
+        buttonTry.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TryClassicAlgorithmActivity.class);
+                startActivity(intent);
+//                if(cardValue >= 1 && cardValue <=3){ // Classic algorithms.
+//
+//                }else if(cardValue >= 4 && cardValue <= 6){ // Modern symmetry algorithms.
+//
+//                }else if(cardValue >= 7 && cardValue <= 9){ // Modern public algorithms.
+//
+//                }else if(cardValue >= 10 && cardValue <= 12){ // Hash algorithms.
+//
+//                }else{ // Applied algorithms.
+//
+//                }
+            }
+        });
     }
 
     /**
