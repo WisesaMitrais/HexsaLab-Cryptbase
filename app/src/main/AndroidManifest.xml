@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.TryClassicAlgorithmActivity"></activity>
+        <activity android:name=".activity.TryClassicAlgorithmActivity" />
+        <activity android:name=".activity.TryModernAlgorithmActivity" />
+        <activity android:name=".activity.TryHashAlgorithmActivity" />
+        <activity android:name=".activity.TryAppliedAlgorithmActivity"></activity>
     </application>
 
 </manifest>

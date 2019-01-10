@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.TryClassicAlgorithmActivity"
-    android:background="@color/colorRed1">
+    tools:context=".activity.TryAppliedAlgorithmActivity"
+    android:background="@color/colorYellow1">
 
 </android.support.constraint.ConstraintLayout>

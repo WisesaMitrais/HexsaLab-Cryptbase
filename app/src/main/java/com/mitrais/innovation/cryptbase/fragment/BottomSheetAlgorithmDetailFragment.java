@@ -15,7 +15,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.mitrais.innovation.cryptbase.R;
+import com.mitrais.innovation.cryptbase.activity.TryAppliedAlgorithmActivity;
 import com.mitrais.innovation.cryptbase.activity.TryClassicAlgorithmActivity;
+import com.mitrais.innovation.cryptbase.activity.TryHashAlgorithmActivity;
+import com.mitrais.innovation.cryptbase.activity.TryModernAlgorithmActivity;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandBold;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandMedium;
 import com.mitrais.innovation.cryptbase.utility.font.FontQuicksandRegular;
@@ -210,19 +213,17 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
         buttonTry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TryClassicAlgorithmActivity.class);
+                Intent intent;
+                if(cardValue >= 1 && cardValue <=3){ // Classic algorithms.
+                    intent = new Intent(getActivity(), TryClassicAlgorithmActivity.class);
+                }else if(cardValue >= 4 && cardValue <= 9){ // Modern algorithms.
+                    intent = new Intent(getActivity(), TryModernAlgorithmActivity.class);
+                }else if(cardValue >= 10 && cardValue <= 12){ // Hash algorithms.
+                    intent = new Intent(getActivity(), TryHashAlgorithmActivity.class);
+                }else{ // Applied algorithms.
+                    intent = new Intent(getActivity(), TryAppliedAlgorithmActivity.class);
+                }
                 startActivity(intent);
-//                if(cardValue >= 1 && cardValue <=3){ // Classic algorithms.
-//
-//                }else if(cardValue >= 4 && cardValue <= 6){ // Modern symmetry algorithms.
-//
-//                }else if(cardValue >= 7 && cardValue <= 9){ // Modern public algorithms.
-//
-//                }else if(cardValue >= 10 && cardValue <= 12){ // Hash algorithms.
-//
-//                }else{ // Applied algorithms.
-//
-//                }
             }
         });
     }
