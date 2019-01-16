@@ -69,8 +69,8 @@ public class TryClassicAlgorithmActivity extends AppCompatActivity {
             encryptNote.setText("Note: The key values are between 1 - 25.");
             decryptNote.setText("Note: The key values are between 1 - 25.");
         }else if(cardValue == 2){ // Scytale cipher.
-            encryptNote.setText("Note: The key values are 2 or 3.");
-            decryptNote.setText("Note: The key values are 2 or 3.");
+            encryptNote.setText("Note: The key values are 2 / 3 / 5.");
+            decryptNote.setText("Note: The key values are 2 / 3 / 5.");
         }else if(cardValue == 3){ // One-time pad cipher.
             encryptNote.setText("Note: The key length should be same with plain.");
             decryptNote.setText("Note: The key length should be same with cipher.");
@@ -95,12 +95,12 @@ public class TryClassicAlgorithmActivity extends AppCompatActivity {
                         callSnackbar(R.string.key_wrong_value);
                     }
                 }else if(cardValue == 2){
-//                    if(key == 2 || key == 3){
-//                        ScytaleCipher scytaleCipher = new ScytaleCipher(plaintext, key);
-//                        rsltEncrypt.setText(scytaleCipher.encryptScytaleCipher());
-//                    }else{
-//                        callSnackbar(R.string.key_wrong_value);
-//                    }
+                    if(key == 2 || key == 3 || key == 5){
+                        ScytaleCipher scytaleCipher = new ScytaleCipher(plaintext, key);
+                        rsltEncrypt.setText(scytaleCipher.encryptScytaleCipher());
+                    }else{
+                        callSnackbar(R.string.key_wrong_value);
+                    }
                 }else if(cardValue == 3){
 //                    if(keyEncrypt.getText().toString().length() == plaintext.length()){
 //                        OneTimePad oneTimePad = new OneTimePad(plaintext,
@@ -132,12 +132,12 @@ public class TryClassicAlgorithmActivity extends AppCompatActivity {
                         callSnackbar(R.string.key_wrong_value);
                     }
                 }else if(cardValue == 2){
-//                    if(key == 2 || key == 3){
-//                        ScytaleCipher scytaleCipher = new ScytaleCipher(ciphertext, key);
-//                        rsltEncrypt.setText(scytaleCipher.decryptScytaleCipher());
-//                    }else{
-//                        callSnackbar(R.string.key_wrong_value);
-//                    }
+                    if(key == 2 || key == 3 || key == 5){
+                        ScytaleCipher scytaleCipher = new ScytaleCipher(ciphertext, key);
+                        rsltDecrypt.setText(scytaleCipher.decryptScytaleCipher());
+                    }else{
+                        callSnackbar(R.string.key_wrong_value);
+                    }
                 }else if(cardValue == 3){
 //                    if(keyDecrypt.getText().toString().length() == ciphertext.length()){
 //                        OneTimePad oneTimePad = new OneTimePad(ciphertext,

@@ -25,6 +25,10 @@ public class ScytaleCipher {
      * @return the string ciphertext.
      */
     public String encryptScytaleCipher(){
+        int addChar = key - (string.length() % key);
+        for(int i = 1; i <= addChar; i++){
+            string += "x";
+        }
         result = classicProcedure.transposeArray(string, key);
         return result;
     }
@@ -34,7 +38,7 @@ public class ScytaleCipher {
      * @return the string plaintext.
      */
     public String decryptScytaleCipher(){
-        key = string.length()/key;
+        key = string.length() / key;
         result = classicProcedure.transposeArray(string, key);
         return result;
     }
