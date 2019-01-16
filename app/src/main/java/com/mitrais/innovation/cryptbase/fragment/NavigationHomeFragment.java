@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.mitrais.innovation.cryptbase.R;
+import com.mitrais.innovation.cryptbase.utility.dialog.BottomSheetAlgorithmDetailFragment;
 
 public class NavigationHomeFragment extends Fragment {
 

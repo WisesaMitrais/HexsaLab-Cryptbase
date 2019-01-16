@@ -36,7 +36,7 @@ public class ClassicProcedure {
      * @return a transposed string.
      */
     public String transposeArray(String string,  int key){
-        if(string.length() % key != 0) key++;                                                       //Increment key if  !(key | string.length)
+        if(string.length() % key != 0) key++; //Increment key if  !(key | string.length)
         StringBuilder resultString = new StringBuilder();
         for(int idx = 0; idx < key; idx++){
             int counter = idx;

@@ -33,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);                          //Set potrait screen mode.
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Set potrait screen mode.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initializeComponents();
         setDialogAppInfo();
         setBottomNavigation();
-        setCurrentFragment(homeFragment);                                                           //Set home fragment as default fragment.
+        setCurrentFragment(homeFragment); //Set home fragment as default fragment.
     }
 
     /**
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
      * @param fragment: a fragment which will set as current fragment.
     */
     private void setCurrentFragment(Fragment fragment){
-        //Set animation and new state of fragment.
+        /* Set animation and new state of fragment. */
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.setCustomAnimations(R.anim.fragment_fade_in, R.anim.fragment_fade_out);
         fragmentTransaction.replace(R.id.am_frame_layout, fragment);

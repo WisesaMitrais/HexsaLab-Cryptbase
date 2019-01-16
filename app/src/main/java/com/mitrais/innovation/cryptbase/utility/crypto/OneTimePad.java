@@ -29,7 +29,7 @@ public class OneTimePad {
         idxKey = 0;
         for(int idx = 0; idx < string.length(); idx++){
             asciiValueInput = (int) string.charAt(idx);
-            if(asciiValueInput == 32 || asciiValueInput == 44 || asciiValueInput == 46){            //ASCII code for , . (space).
+            if(asciiValueInput == 32 || asciiValueInput == 44 || asciiValueInput == 46){ //ASCII code for , . (space).
                 tempChar = string.charAt(idx);
             }else{
                 tempIntInput = classicProcedure.letterToNumber(string.charAt(idx));
@@ -50,7 +50,7 @@ public class OneTimePad {
     public String decryptOneTimePad(){
         for(int idx = 0; idx < string.length(); idx++){
             asciiValueInput = (int) string.charAt(idx);
-            if(asciiValueInput == 32 || asciiValueInput == 44 || asciiValueInput == 46){            //ASCII code for , . (space).
+            if(asciiValueInput == 32 || asciiValueInput == 44 || asciiValueInput == 46){ //ASCII code for , . (space).
                 tempChar = string.charAt(idx);
             }else{
                 tempIntInput = classicProcedure.letterToNumber(string.charAt(idx));

@@ -1,4 +1,4 @@
-package com.mitrais.innovation.cryptbase.fragment;
+package com.mitrais.innovation.cryptbase.utility.dialog;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -223,6 +223,7 @@ public class BottomSheetAlgorithmDetailFragment extends BottomSheetDialogFragmen
                 }else{ // Applied algorithms.
                     intent = new Intent(getActivity(), TryAppliedAlgorithmActivity.class);
                 }
+                intent.putExtra("cardValue", cardValue);
                 startActivity(intent);
             }
         });

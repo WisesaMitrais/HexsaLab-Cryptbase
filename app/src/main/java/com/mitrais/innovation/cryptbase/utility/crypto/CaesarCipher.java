@@ -29,7 +29,7 @@ public class CaesarCipher {
         result = "";
         for(int idx = 0; idx < string.length(); idx++){
             asciiValue = (int) string.charAt(idx);
-            if(asciiValue == 32 || asciiValue == 44 || asciiValue == 46){                           //ASCII code for , . (space).
+            if(asciiValue == 32 || asciiValue == 44 || asciiValue == 46){ //ASCII code for , . (space).
                 tempChar = string.charAt(idx);
             }else{
                 tempInt = classicProcedure.letterToNumber(string.charAt(idx));
@@ -49,7 +49,7 @@ public class CaesarCipher {
         result = "";
         for(int idx = 0; idx < string.length(); idx++){
             asciiValue = (int) string.charAt(idx);
-            if(asciiValue == 32 || asciiValue == 44 || asciiValue == 46){                           //ASCII code for , . (space).
+            if(asciiValue == 32 || asciiValue == 44 || asciiValue == 46){ //ASCII code for , . (space).
                 tempChar = string.charAt(idx);
             }else{
                 tempInt = classicProcedure.letterToNumber(string.charAt(idx));
